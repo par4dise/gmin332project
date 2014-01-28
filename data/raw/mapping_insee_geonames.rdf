@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      
+    <!-- http://www.geonames.org/ontology/ontology/mappings_v3.01.rdf -->
+    <!-- 2014.01.10 : version réduite de l'ontologie -->
+      
+      <owl:Ontology rdf:about="http://www.geonames.org/ontology/mappings">
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-02-14</dc:modified>
+            <dc:publisher>Geonames.org</dc:publisher>
+            <dc:title xml:lang="en">Mappings from Geonames codes to INSEE</dc:title>
+            <dc:description xml:lang="en">Expression of mappings between Geonames feature codes and equivalent classes in various ontologies such as schema.org, linkedgeodata.org, dbpedia.org, INSEE ontology.</dc:description>
+            <rdfs:comment xml:lang="en">Those mappings are non-exhaustive and valid at the date of publication. They can be invalidated by further changes in the quoted ontologies</rdfs:comment>
+            <ns:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+            <dc:creator>
+                  <foaf:Person rdf:about="http://labs.mondeca.com/foaf/mondeca.rdf#bvatant">
+                        <foaf:name>Bernard Vatant</foaf:name>
+                  </foaf:Person>
+            </dc:creator>
+            <rdfs:isDefinedBy  rdf:resource="http://www.geonames.org/ontology/mappings_insee_geonames.rdf"/>
+      </owl:Ontology>
+ 
+
+    <!-- http://rdf.insee.fr/geo/Arrondissement -->
+
+    <owl:Class rdf:about="http://rdf.insee.fr/geo/Arrondissement">
+        <rdfs:label xml:lang="fr">Arrondissement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue rdf:resource="http://www.geonames.org/ontology#A.ADM3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource="http://data.lirmm.fr/ontologies/geo-fr#Arrondissement"/>
+    </owl:Class>
+
+    <!-- http://rdf.insee.fr/geo/Commune -->
+
+    <owl:Class rdf:about="http://rdf.insee.fr/geo/Commune">
+        <rdfs:label xml:lang="fr">Commune</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue rdf:resource="http://www.geonames.org/ontology#A.ADM4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource="http://data.lirmm.fr/ontologies/geo-fr#Commune"/>
+    </owl:Class>
+
+    <!-- http://rdf.insee.fr/geo/Departement -->
+
+    <owl:Class rdf:about="http://rdf.insee.fr/geo/Departement">
+        <rdfs:label xml:lang="fr">Département</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue rdf:resource="http://www.geonames.org/ontology#A.ADM2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    <rdfs:isDefinedBy rdf:resource="http://data.lirmm.fr/ontologies/geo-fr#Departement"/>
+    </owl:Class>
+
+    <!-- http://rdf.insee.fr/geo/Pays -->
+
+    <owl:Class rdf:about="http://rdf.insee.fr/geo/Pays">
+        <rdfs:label xml:lang="fr">Pays</rdfs:label>
+        <owl:equivalentClass rdf:resource="http://schema.org/Country"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue rdf:resource="http://www.geonames.org/ontology#A.PCLI"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://schema.org/AdministrativeArea"/>
+    	<rdfs:isDefinedBy rdf:resource="http://data.lirmm.fr/ontologies/geo-fr#Pays"/>
+    </owl:Class>
+
+    <!-- http://rdf.insee.fr/geo/Region -->
+
+    <owl:Class rdf:about="http://rdf.insee.fr/geo/Region">
+        <rdfs:label xml:lang="fr">Région</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/State"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue rdf:resource="http://www.geonames.org/ontology#A.ADM1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    	<rdfs:isDefinedBy rdf:resource="http://data.lirmm.fr/ontologies/geo-fr#Region"/>
+    </owl:Class>    
+    
+    <!-- Ajout Séb -->
+    
+    <owl:Class rdf:about="http://rdf.insee.fr/geo/Region">
+        <owl:sameAs rdf:resource="http://www.geonames.org/ontology#A.ADM1"/>
+    </owl:Class>  
+    <owl:Class rdf:about="http://rdf.insee.fr/geo/Departement">
+        <owl:sameAs rdf:resource="http://www.geonames.org/ontology#A.ADM2"/>
+    </owl:Class>
+      
+</rdf:RDF>

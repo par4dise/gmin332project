@@ -1,0 +1,29 @@
+<rdf:RDF
+     xmlns:ns="http://www.gmin332.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:mongo="http://www.gmin332.org/mongo#"
+     xmlns:d2rq="http://www.gmin332.org/d2rq#">
+   
+    <!-- Mongo <-> D2RQ (Commune) -->
+    <owl:Class rdf:about="http://www.gmin332.org/mongo#Commune">
+        <owl:sameAs rdf:resource="http://www.gmin332.org/d2rq#Commune"/>
+    </owl:Class> 
+     
+    <!-- Neo4J <-> D2RQ (Département) -->
+    <owl:Class rdf:about="http://www.gmin332.org/d2rq#Departement">
+        <owl:sameAs rdf:resource="http://www.gmin332.org/neo#departement"/>
+        <owl:sameAs rdf:resource="http://www.gmin332.org/tdb#Departement"/>
+    </owl:Class>  
+     
+    <!-- TDB <-> D2RQ (Département)
+    <owl:Class rdf:about="http://www.gmin332.org/d2rq#Departement">
+        <owl:sameAs rdf:resource="http://www.gmin332.org/tdb#Departement"/>
+    </owl:Class>    -->
+     
+    <!-- TDB <-> Neo4J (Région) -->
+    <owl:Class rdf:about="http://www.gmin332.org/neo#Region">
+        <owl:sameAs rdf:resource="http://www.gmin332.org/tdb#Region"/>
+    </owl:Class>  
+      
+</rdf:RDF>

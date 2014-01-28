@@ -1,0 +1,89 @@
+@prefix map: <file:d2rqmapping.n3#> .
+@prefix db: <> .
+@prefix gdc: <http://www.gmin332.org/d2rq#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+    
+map:database a d2rq:Database;
+	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
+	d2rq:jdbcDSN "jdbc:mysql://localhost:8889/inseedb"; 
+	d2rq:username "root";
+	d2rq:password "root";
+	jdbc:autoReconnect "true";
+	.
+
+####################### Table "DEPARTEMENT" #######################
+map:DepartementClassMap a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "http://www.gmin332.org/departement#@@DEPARTEMENT.DEPARTEMENT@@";
+	d2rq:class gdc:DepartementClassMap;	
+	d2rq:classDefinitionLabel "Départements";
+	.
+# Nom département
+map:dep_nom a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:DepartementClassMap;
+	d2rq:property gdc:dep_nom;
+	d2rq:column "DEPARTEMENT.NCCENR";
+	.
+# Code département
+map:dep_code a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:DepartementClassMap;
+	d2rq:property gdc:dep_code;
+	d2rq:column "DEPARTEMENT.DEPARTEMENT";
+	.
+# 
+#map:dep_cheflieu a d2rq:PropertyBridge;
+#	d2rq:belongsToClassMap map:DepartementClassMap;
+#	d2rq:property gdc:dep_cheflieu;
+#	d2rq:column "DEPARTEMENT.CHEFLIEU";
+#	.
+# 
+map:dep_region a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:DepartementClassMap;
+	d2rq:property gdc:dep_region;
+	d2rq:column "DEPARTEMENT.REGION";
+	.
+
+####################### Table "COG_R" #######################
+map:CommuneClassMap a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "http://www.gmin332.org/commune#@@COG_R.CODEINSEE@@";
+	d2rq:class gdc:CommuneClassMap;	
+	d2rq:classDefinitionLabel "Communes";	
+	.
+# Nom de commune
+map:com_nom a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:CommuneClassMap;
+	d2rq:property gdc:com_nom;
+	d2rq:column "COG_R.NCCENR";
+	.
+# Code INSEE
+map:com_insee a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:CommuneClassMap;
+	d2rq:property gdc:com_insee;
+	d2rq:column "COG_R.CODEINSEE";
+	.
+# Arrondissement
+#map:com_arr a d2rq:PropertyBridge;
+#	d2rq:belongsToClassMap map:CommuneClassMap;
+#	d2rq:property gdc:com_arr;
+#	d2rq:column "COG_R.AR";
+#	.
+# Code dept
+map:com_cdep a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:CommuneClassMap;
+	d2rq:property gdc:com_cdep;
+	d2rq:column "COG_R.CODEDEP";
+	.
+# Association avec la table "DEPARTEMENT"
+map:com_dep a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:CommuneClassMap;
+	d2rq:property gdc:com_dep;
+	d2rq:refersToClassMap map:DepartementClassMap;
+	d2rq:join "COG_R.CODEDEP = DEPARTEMENT.DEPARTEMENT";	
+	.
+
+		

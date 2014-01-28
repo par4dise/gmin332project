@@ -1,0 +1,116 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:neo="http://www.gmin332.org/neo#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#66">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>459 798</neo:pop>
+    <neo:name>Pyrénées-Orientales</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#85">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>657 326</neo:pop>
+    <neo:name>Vendée</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#64">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>662 236</neo:pop>
+    <neo:name>Pyrénées-Atlantique</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#53">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>309 168</neo:pop>
+    <neo:name>Mayenne</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#Aquitaine">
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#24"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#40"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#64"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#47"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#33"/>
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#region"/>
+    <dc:title>Aquitaine</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#49">
+    <neo:pop>800 424</neo:pop>
+    <neo:name>Maine-et-Loire</neo:name>
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#47">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>333 569</neo:pop>
+    <neo:name>Lot-et-Garonne</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#48">
+    <neo:pop>77 085</neo:pop>
+    <neo:name>Lozère</neo:name>
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#24">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>20</neo:pop>
+    <neo:name>Dordogne</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#pays">
+    <neo:caracterisepar rdf:resource="http://www.gmin332.org/neo#Aquitaine"/>
+    <neo:caracterisepar rdf:resource="http://www.gmin332.org/neo#Pays de la Loire"/>
+    <neo:caracterisepar rdf:resource="http://www.gmin332.org/neo#Languedoc-Roussillon"/>
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#pays"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#40">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>19</neo:pop>
+    <neo:name>Landes</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#34">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>1 090 052</neo:pop>
+    <neo:name>Hérault</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#33">
+    <neo:pop>1 491 170</neo:pop>
+    <neo:name>Gironde</neo:name>
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#11">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>366 604</neo:pop>
+    <neo:name>Aude</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#44">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>1 322 404</neo:pop>
+    <neo:name>Loire-Atlantique</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#30">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>733 747</neo:pop>
+    <neo:name>Gard</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#72">
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#departement"/>
+    <neo:pop>569 029</neo:pop>
+    <neo:name>Sarthe</neo:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#Languedoc-Roussillon">
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#66"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#11"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#30"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#34"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#48"/>
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#region"/>
+    <dc:title>Languedoc-Roussillon</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.gmin332.org/neo#Pays de la Loire">
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#44"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#53"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#72"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#85"/>
+    <neo:departements rdf:resource="http://www.gmin332.org/neo#49"/>
+    <rdf:type rdf:resource="http://www.gmin332.org/neo#region"/>
+    <dc:title>Pays de la Loire</dc:title>
+  </rdf:Description>
+</rdf:RDF>

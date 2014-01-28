@@ -1,0 +1,316 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:tdb="http://www.gmin332.org/tdb#">
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Rhône">
+    <tdb:population>1738949</tdb:population>
+    <tdb:longitude>4.5</tdb:longitude>
+    <tdb:latitude>46</tdb:latitude>
+    <tdb:nom>Rhône</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Aude">
+    <tdb:population>363420</tdb:population>
+    <tdb:longitude>2.5</tdb:longitude>
+    <tdb:latitude>43.08333</tdb:latitude>
+    <tdb:nom>Aude</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Département du Nord">
+    <tdb:population>2613285</tdb:population>
+    <tdb:longitude>3.66667</tdb:longitude>
+    <tdb:latitude>50.33333</tdb:latitude>
+    <tdb:nom>Département du Nord</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Lorraine">
+    <tdb:population>2339881</tdb:population>
+    <tdb:longitude>6</tdb:longitude>
+    <tdb:latitude>49</tdb:latitude>
+    <tdb:nom>Lorraine</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Tarn">
+    <tdb:population>385722</tdb:population>
+    <tdb:longitude>2</tdb:longitude>
+    <tdb:latitude>43.83333</tdb:latitude>
+    <tdb:nom>Tarn</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Lot-et-Garonne">
+    <tdb:population>341132</tdb:population>
+    <tdb:longitude>0.5</tdb:longitude>
+    <tdb:latitude>44.33333</tdb:latitude>
+    <tdb:nom>Lot-et-Garonne</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Provence-Alpes-Côte d&apos;Azur">
+    <tdb:population>4864015</tdb:population>
+    <tdb:longitude>6</tdb:longitude>
+    <tdb:latitude>44</tdb:latitude>
+    <tdb:nom>Provence-Alpes-Côte d'Azur</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Languedoc-Roussillon">
+    <tdb:population>2560870</tdb:population>
+    <tdb:longitude>3.16667</tdb:longitude>
+    <tdb:latitude>43.66667</tdb:latitude>
+    <tdb:nom>Languedoc-Roussillon</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Alsace">
+    <tdb:population>1827248</tdb:population>
+    <tdb:longitude>7.5</tdb:longitude>
+    <tdb:latitude>48.5</tdb:latitude>
+    <tdb:nom>Alsace</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Île-de-France">
+    <tdb:population>11598866</tdb:population>
+    <tdb:longitude>2.5</tdb:longitude>
+    <tdb:latitude>48.5</tdb:latitude>
+    <tdb:nom>Île-de-France</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Finistère">
+    <tdb:population>925442</tdb:population>
+    <tdb:longitude>-4</tdb:longitude>
+    <tdb:latitude>48.33333</tdb:latitude>
+    <tdb:nom>Finistère</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Dordogne">
+    <tdb:population>424456</tdb:population>
+    <tdb:longitude>0.83333</tdb:longitude>
+    <tdb:latitude>45.16667</tdb:latitude>
+    <tdb:nom>Dordogne</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Rhône-Alpes">
+    <tdb:population>6065959</tdb:population>
+    <tdb:longitude>5.33333</tdb:longitude>
+    <tdb:latitude>45.5</tdb:latitude>
+    <tdb:nom>Rhône-Alpes</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Loire-Atlantique">
+    <tdb:population>1301325</tdb:population>
+    <tdb:longitude>-1.83333</tdb:longitude>
+    <tdb:latitude>47.25</tdb:latitude>
+    <tdb:nom>Loire-Atlantique</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Hérault">
+    <tdb:population>1050026</tdb:population>
+    <tdb:longitude>3.5</tdb:longitude>
+    <tdb:latitude>43.66667</tdb:latitude>
+    <tdb:nom>Hérault</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Pyrénées-Orientales">
+    <tdb:population>454737</tdb:population>
+    <tdb:longitude>2.33333</tdb:longitude>
+    <tdb:latitude>42.5</tdb:latitude>
+    <tdb:nom>Pyrénées-Orientales</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Gard">
+    <tdb:population>718181</tdb:population>
+    <tdb:longitude>4</tdb:longitude>
+    <tdb:latitude>44</tdb:latitude>
+    <tdb:nom>Gard</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Sarthe">
+    <tdb:population>576741</tdb:population>
+    <tdb:longitude>0.08333</tdb:longitude>
+    <tdb:latitude>48</tdb:latitude>
+    <tdb:nom>Sarthe</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Upper Normandy">
+    <tdb:population>1816716</tdb:population>
+    <tdb:longitude>1</tdb:longitude>
+    <tdb:latitude>49.5</tdb:latitude>
+    <tdb:nom>Upper Normandy</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Lozère">
+    <tdb:population>81312</tdb:population>
+    <tdb:longitude>3.5</tdb:longitude>
+    <tdb:latitude>44.5</tdb:latitude>
+    <tdb:nom>Lozère</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Somme">
+    <tdb:population>582469</tdb:population>
+    <tdb:longitude>2.5</tdb:longitude>
+    <tdb:latitude>49.91667</tdb:latitude>
+    <tdb:nom>Somme</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Landes">
+    <tdb:population>392592</tdb:population>
+    <tdb:longitude>-0.83333</tdb:longitude>
+    <tdb:latitude>44</tdb:latitude>
+    <tdb:nom>Landes</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Loiret">
+    <tdb:population>672142</tdb:population>
+    <tdb:longitude>2.33333</tdb:longitude>
+    <tdb:latitude>47.91667</tdb:latitude>
+    <tdb:nom>Loiret</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Doubs">
+    <tdb:population>539992</tdb:population>
+    <tdb:longitude>6.41667</tdb:longitude>
+    <tdb:latitude>47.16667</tdb:latitude>
+    <tdb:nom>Doubs</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Gironde">
+    <tdb:population>1464088</tdb:population>
+    <tdb:longitude>-0.5</tdb:longitude>
+    <tdb:latitude>44.91667</tdb:latitude>
+    <tdb:nom>Gironde</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Limousin">
+    <tdb:population>737001</tdb:population>
+    <tdb:longitude>1.83333</tdb:longitude>
+    <tdb:latitude>45.5</tdb:latitude>
+    <tdb:nom>Limousin</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Moselle">
+    <tdb:population>1066328</tdb:population>
+    <tdb:longitude>6.5</tdb:longitude>
+    <tdb:latitude>49</tdb:latitude>
+    <tdb:nom>Moselle</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Corrèze">
+    <tdb:population>252116</tdb:population>
+    <tdb:longitude>1.83333</tdb:longitude>
+    <tdb:latitude>45.25</tdb:latitude>
+    <tdb:nom>Corrèze</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Picardie">
+    <tdb:population>1900354</tdb:population>
+    <tdb:longitude>3.5</tdb:longitude>
+    <tdb:latitude>50</tdb:latitude>
+    <tdb:nom>Picardie</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Poitou-Charentes">
+    <tdb:population>1739780</tdb:population>
+    <tdb:longitude>0.16667</tdb:longitude>
+    <tdb:latitude>46.08333</tdb:latitude>
+    <tdb:nom>Poitou-Charentes</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Vendée">
+    <tdb:population>645820</tdb:population>
+    <tdb:longitude>-1.33333</tdb:longitude>
+    <tdb:latitude>46.66667</tdb:latitude>
+    <tdb:nom>Vendée</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Ain">
+    <tdb:population>605892</tdb:population>
+    <tdb:longitude>5.33333</tdb:longitude>
+    <tdb:latitude>46.16667</tdb:latitude>
+    <tdb:nom>Ain</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Mayenne">
+    <tdb:population>315303</tdb:population>
+    <tdb:longitude>-0.66667</tdb:longitude>
+    <tdb:latitude>48.08333</tdb:latitude>
+    <tdb:nom>Mayenne</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Maine-et-Loire">
+    <tdb:population>803573</tdb:population>
+    <tdb:longitude>-0.33333</tdb:longitude>
+    <tdb:latitude>47.5</tdb:latitude>
+    <tdb:nom>Maine-et-Loire</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Centre">
+    <tdb:population>2526919</tdb:population>
+    <tdb:longitude>1.75</tdb:longitude>
+    <tdb:latitude>47.5</tdb:latitude>
+    <tdb:nom>Centre</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Auvergne">
+    <tdb:population>1339247</tdb:population>
+    <tdb:longitude>3</tdb:longitude>
+    <tdb:latitude>45.33333</tdb:latitude>
+    <tdb:nom>Auvergne</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Pyrénées-Atlantiques">
+    <tdb:population>671644</tdb:population>
+    <tdb:longitude>-0.83333</tdb:longitude>
+    <tdb:latitude>43.25</tdb:latitude>
+    <tdb:nom>Pyrénées-Atlantiques</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Aquitaine">
+    <tdb:population>3150890</tdb:population>
+    <tdb:longitude>1</tdb:longitude>
+    <tdb:latitude>44.58333</tdb:latitude>
+    <tdb:nom>Aquitaine</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Nord-Pas-de-Calais">
+    <tdb:population>4021676</tdb:population>
+    <tdb:longitude>2.5</tdb:longitude>
+    <tdb:latitude>50.5</tdb:latitude>
+    <tdb:nom>Nord-Pas-de-Calais</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Pays de la Loire">
+    <tdb:population>3482594</tdb:population>
+    <tdb:longitude>-1</tdb:longitude>
+    <tdb:latitude>47.5</tdb:latitude>
+    <tdb:nom>Pays de la Loire</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Champagne-Ardenne">
+    <tdb:population>1339487</tdb:population>
+    <tdb:longitude>4.5</tdb:longitude>
+    <tdb:latitude>49</tdb:latitude>
+    <tdb:nom>Champagne-Ardenne</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Bretagne">
+    <tdb:population>3120288</tdb:population>
+    <tdb:longitude>-3</tdb:longitude>
+    <tdb:latitude>48</tdb:latitude>
+    <tdb:nom>Bretagne</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Paris">
+    <tdb:population>2257981</tdb:population>
+    <tdb:longitude>2.3486</tdb:longitude>
+    <tdb:latitude>48.8534</tdb:latitude>
+    <tdb:nom>Paris</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Franche-Comté">
+    <tdb:population>1158671</tdb:population>
+    <tdb:longitude>6</tdb:longitude>
+    <tdb:latitude>47</tdb:latitude>
+    <tdb:nom>Franche-Comté</tdb:nom>
+  </tdb:Region>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Bourgogne">
+    <tdb:population>1633891</tdb:population>
+    <tdb:longitude>4.5</tdb:longitude>
+    <tdb:latitude>47</tdb:latitude>
+    <tdb:nom>Bourgogne</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Loire">
+    <tdb:population>763867</tdb:population>
+    <tdb:longitude>4.43298</tdb:longitude>
+    <tdb:latitude>45.47169</tdb:latitude>
+    <tdb:nom>Loire</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Marne">
+    <tdb:population>580402</tdb:population>
+    <tdb:longitude>4.16667</tdb:longitude>
+    <tdb:latitude>48.91667</tdb:latitude>
+    <tdb:nom>Marne</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Midi-Pyrénées">
+    <tdb:population>2810247</tdb:population>
+    <tdb:longitude>1.33333</tdb:longitude>
+    <tdb:latitude>43.5</tdb:latitude>
+    <tdb:nom>Midi-Pyrénées</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Bouches-du-Rhône">
+    <tdb:population>1995094</tdb:population>
+    <tdb:longitude>5</tdb:longitude>
+    <tdb:latitude>43.5</tdb:latitude>
+    <tdb:nom>Bouches-du-Rhône</tdb:nom>
+  </tdb:Departement>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Charente-Maritime">
+    <tdb:population>634928</tdb:population>
+    <tdb:longitude>-0.75</tdb:longitude>
+    <tdb:latitude>45.5</tdb:latitude>
+    <tdb:nom>Charente-Maritime</tdb:nom>
+  </tdb:Departement>
+  <tdb:Region rdf:about="http://www.gmin332.org/tdb#Basse-Normandie">
+    <tdb:population>1461429</tdb:population>
+    <tdb:longitude>-1</tdb:longitude>
+    <tdb:latitude>49</tdb:latitude>
+    <tdb:nom>Basse-Normandie</tdb:nom>
+  </tdb:Region>
+  <tdb:Departement rdf:about="http://www.gmin332.org/tdb#Calvados">
+    <tdb:population>697054</tdb:population>
+    <tdb:longitude>-0.5</tdb:longitude>
+    <tdb:latitude>49.16667</tdb:latitude>
+    <tdb:nom>Calvados</tdb:nom>
+  </tdb:Departement>
+</rdf:RDF>
