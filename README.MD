@@ -10,4 +10,4 @@ Nécessite :
 + MongoDB
 + TDB
 
-Toutes les sources sont sous licence CC BY-SA 4.0
+Toutes les sources sont sous licence CC BY-SA 4.0.
