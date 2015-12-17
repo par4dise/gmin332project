@@ -1,4 +1,4 @@
-package fr.um2.gmin332project.controller;
+package fr.um2.gmin332project.common;
 
 /*
  * Constantes utilisées par l'application

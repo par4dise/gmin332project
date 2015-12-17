@@ -12,7 +12,7 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.vocabulary.RDF;
 
-import fr.um2.gmin332project.controller.Config;
+import fr.um2.gmin332project.common.Config;
 import fr.um2.gmin332project.neo4j.Neo4JReader;
 
 public class Neo4jTest {

@@ -15,7 +15,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
-import fr.um2.gmin332project.controller.Config;
+import fr.um2.gmin332project.common.Config;
 
 public class MongoReader {
 	

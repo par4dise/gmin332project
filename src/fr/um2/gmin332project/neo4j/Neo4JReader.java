@@ -22,12 +22,12 @@ import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.vocabulary.DC;
 import com.hp.hpl.jena.vocabulary.DC_11;
 import com.hp.hpl.jena.vocabulary.RDF;
 
-import fr.um2.gmin332project.controller.Config;
+import fr.um2.gmin332project.common.Config;
 
+@SuppressWarnings("deprecation")
 public class Neo4JReader {
 	
 	private static enum RelTypes implements RelationshipType
@@ -214,16 +214,9 @@ public class Neo4JReader {
 		
 		Node firstNode = getFirstNode();
 		Node contient;
-		String output = firstNode.getProperty("name") + "voisins :" +
-		System.getProperty("line.separator");
 		Traverser voisinsTraverser = getVoisins(firstNode); // noeuds traverses
-		int nbOfFriends = 0; // compteur de voisins
 		for (Path voisinPath : voisinsTraverser) {
 			
-			output = "Région " + 
-					voisinPath.length() + " => " +
-					voisinPath.endNode().getProperty("name") +
-					System.getProperty("line.separator");
 			//System.out.println(output);
 			Resource reg = m.createResource(stat+voisinPath.endNode().getProperty("name"));
 			reg.addProperty(DC_11.title, voisinPath.endNode().getProperty("name").toString());
@@ -234,7 +227,6 @@ public class Neo4JReader {
 			id=contient.getId();			 
 	
 			printNeoVoisinsappartenant(id,m,reg);
-			nbOfFriends++;
 				
 		}
 		//m.write(System.out, "RDF/XML");
@@ -266,8 +258,6 @@ public class Neo4JReader {
 		m.add(r, RDF.type, region);
 		
 		Node firstNode = getFirstNodeAppartenant(i);
-		Node appartenant;
-		
 		String output = firstNode.getProperty("name") + "  voisins :" + System.getProperty("line.separator");
 		
 		Resource dep = m.createResource(stat + firstNode.getProperty("code"));

@@ -15,6 +15,8 @@ import com.hp.hpl.jena.reasoner.Reasoner;
 import com.hp.hpl.jena.reasoner.ReasonerRegistry;
 import com.hp.hpl.jena.util.FileManager;
 
+import fr.um2.gmin332project.common.Config;
+import fr.um2.gmin332project.common.Queries;
 import fr.um2.gmin332project.mongo.MongoReader;
 import fr.um2.gmin332project.neo4j.Neo4JReader;
 import fr.um2.gmin332project.tdb.TDBReader;

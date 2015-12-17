@@ -19,7 +19,7 @@ import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.vocabulary.RDF;
 
-import fr.um2.gmin332project.controller.Config;
+import fr.um2.gmin332project.common.Config;
 
 public class TDBReader {
 	public static final String NL = System.getProperty("line.separator");

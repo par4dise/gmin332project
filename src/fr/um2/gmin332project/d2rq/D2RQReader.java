@@ -16,7 +16,7 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 import de.fuberlin.wiwiss.d2rq.jena.ModelD2RQ;
-import fr.um2.gmin332project.controller.Config;
+import fr.um2.gmin332project.common.Config;
 
 public class D2RQReader {
     public static final String NL = System.getProperty("line.separator");
