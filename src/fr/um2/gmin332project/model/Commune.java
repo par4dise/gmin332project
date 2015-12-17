@@ -1,4 +1,4 @@
-package fr.um2.gmin332project.d2rq;
+package fr.um2.gmin332project.model;
 
 public class Commune {
 	private String nom;

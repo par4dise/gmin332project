@@ -11,14 +11,12 @@ import com.hp.hpl.jena.query.QueryExecutionFactory;
 import com.hp.hpl.jena.query.QueryFactory;
 import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
-import com.hp.hpl.jena.query.ResultSetFormatter;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.util.FileManager;
-import com.hp.hpl.jena.vocabulary.OWL;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 import fr.um2.gmin332project.controller.Config;
@@ -26,7 +24,7 @@ import fr.um2.gmin332project.controller.Config;
 public class TDBReader {
 	public static final String NL = System.getProperty("line.separator");
 	
-	/* 
+	/** 
 	 * createModel
 	 * Création (ou MAJ) du modèle sur disque à partir des fichiers source 
 	 */

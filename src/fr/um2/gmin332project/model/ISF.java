@@ -1,4 +1,4 @@
-package fr.um2.gmin332project.mongo;
+package fr.um2.gmin332project.model;
 
 public class ISF {
 	private String codeInsee;

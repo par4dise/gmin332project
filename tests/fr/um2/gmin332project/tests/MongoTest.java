@@ -1,26 +1,24 @@
-package fr.um2.gmin332project.mongo;
+package fr.um2.gmin332project.tests;
 
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
-
-import arq.query;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
-import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoException;
+
+import fr.um2.gmin332project.model.ISF;
 
 /*
  * Classe permettant d'interagir avec MongoDB en Java (POJO ISF en particulier)
  * Requêtes paramétrées, ...
  * Non utilisée pour la manipulation de modèles RDF
  */
-public class MongoAdapter {
+public class MongoTest {
 	public static final boolean ORDER_ASC = true;
 	public static final boolean ORDER_DESC = false;
 	
@@ -197,7 +195,7 @@ public class MongoAdapter {
 	
 	/* Tests de requêtes */
 	public static void main(String[] args) throws UnknownHostException {
-		MongoAdapter mm = new MongoAdapter();
+		MongoTest mm = new MongoTest();
 		try {
 			mm.queryMatchDisplay("code_insee", 34172);
 			System.out.println("======================");

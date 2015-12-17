@@ -23,6 +23,7 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.DC;
+import com.hp.hpl.jena.vocabulary.DC_11;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 import fr.um2.gmin332project.controller.Config;
@@ -39,91 +40,108 @@ public class Neo4JReader {
 	public static GraphDatabaseService graphdbservice;
 	
 
+	/**
+	 * Building graph
+	 * Entities: Country > Region > Departement
+	 */
 	public static void createNodeSpace() {
 		graphdbservice = new GraphDatabaseFactory().newEmbeddedDatabase(neo4j_DBPath);
 		Transaction tx = graphdbservice.beginTx();
 		try {
-			Node France= graphdbservice.createNode(); // cr??ation du point d'acc??s au graphe
-			popNodeId = France.getId();
-			
-			Node pays = graphdbservice.createNode(); // cr??ation du 2??me point 
-		
+			// Modelling "France" = type "country"
+			Node France = graphdbservice.createNode(); // Graph entry point = country
+			popNodeId = France.getId();			
+			Node pays = graphdbservice.createNode(); 
 			pays.setProperty("name", "pays"); 
 			France.createRelationshipTo(pays, RelTypes.EST);
 			
-			Node LanguedocRoussillon = graphdbservice.createNode(); // cr??ation la branche de r??gion 91
-			//matrixNodeId = psg.getId();
+			// Creating Region #1
+			Node LanguedocRoussillon = graphdbservice.createNode(); 
 			LanguedocRoussillon.setProperty("code", "91");
-			LanguedocRoussillon.setProperty("name", "Languedoc-Roussillon");// attribution du premier id
-			Node lozere = graphdbservice.createNode(); // cr??ation d'un autre noeud
+			LanguedocRoussillon.setProperty("name", "Languedoc-Roussillon");
+			
+			// Region #1 Dept #1
+			Node lozere = graphdbservice.createNode(); 
 			lozere.setProperty("name", "Lozère");
-			lozere.setProperty("code", "48"); // property(code)
-			lozere.setProperty("pop", "77 085"); // property(nombre de population)
-			// cr??ation d'une relation entre l'entr??e du graphe et la r??gion LanguedocRoussillon
-			LanguedocRoussillon.createRelationshipTo(lozere, RelTypes.DEPARTEMENT);
+			lozere.setProperty("code", "48"); 
+			lozere.setProperty("pop", "77 085");
+			
+			// Region #1 Dept #2
 			Node herault = graphdbservice.createNode();
 			herault.setProperty("name", "Hérault");
 			herault.setProperty("code", "34");
 			herault.setProperty("pop", "1 090 052"); 
-			lozere.createRelationshipTo(herault, RelTypes.VOISIN);
 			
-			Node gard = graphdbservice.createNode(); // cr??ation d'un autre noeud
+			// Region #1 Dept #3
+			Node gard = graphdbservice.createNode();
 			gard.setProperty("name", "Gard"); 
 			gard.setProperty("code", "30"); 
 			gard.setProperty("pop", "733 747"); 
-			herault.createRelationshipTo(gard, RelTypes.VOISIN);
+			
+			// Region #1 Dept #4
 			Node aude = graphdbservice.createNode();
 			aude.setProperty("name", "Aude");
 			aude.setProperty("code", "11");
-			aude.setProperty("pop", "366 604");
-			gard.createRelationshipTo(aude, RelTypes.VOISIN);
+			aude.setProperty("pop", "366 604"); 
 			
+			// Region #1 Dept #5
 			Node pyrennesorientales= graphdbservice.createNode();
 			pyrennesorientales.setProperty("name", "Pyrénées-Orientales");
 			pyrennesorientales.setProperty("code", "66");
 			pyrennesorientales.setProperty("pop", "459 798");
+			
+			// Creating relationships
+			LanguedocRoussillon.createRelationshipTo(lozere, RelTypes.DEPARTEMENT);
+			lozere.createRelationshipTo(herault, RelTypes.VOISIN);
+			herault.createRelationshipTo(gard, RelTypes.VOISIN);
+			gard.createRelationshipTo(aude, RelTypes.VOISIN);
 			aude.createRelationshipTo(pyrennesorientales, RelTypes.VOISIN);
 			
 			/////////////////////////////////////////////////////////////////////////////////////////////
 			
-			Node paysdelaloire = graphdbservice.createNode(); // cr??ation de la branche r??gion 52
+			// Creating Region #2 and its depts
+			Node paysdelaloire = graphdbservice.createNode(); 
 			paysdelaloire.setProperty("name", "Pays de la Loire"); 
 			paysdelaloire.setProperty("code", "52"); 
-			Node maineetloire = graphdbservice.createNode(); // cr??ation d'un autre noeud
+			
+			Node maineetloire = graphdbservice.createNode(); 
 			maineetloire.setProperty("name", "Maine-et-Loire"); 
 			maineetloire.setProperty("code", "49"); 
 			maineetloire.setProperty("pop", "800 424"); 
-			// cr??ation d'une relation entre l'entr??e du graphe et maineetloire
-			paysdelaloire.createRelationshipTo(maineetloire, RelTypes.DEPARTEMENT);
+			
 			Node vendee = graphdbservice.createNode();
 			vendee.setProperty("name", "Vendée");
 			vendee.setProperty("code", "85");
 			vendee.setProperty("pop", "657 326");
-			maineetloire.createRelationshipTo(vendee, RelTypes.VOISIN);
 	
 			Node sarthe = graphdbservice.createNode();
 			sarthe.setProperty("name", "Sarthe");
 			sarthe.setProperty("code", "72");
 			sarthe.setProperty("pop", "569 029");
-			vendee.createRelationshipTo(sarthe, RelTypes.VOISIN);
 		
 			Node mayenne = graphdbservice.createNode();
 			mayenne.setProperty("name", "Mayenne");
 			mayenne.setProperty("code", "53");
 			mayenne.setProperty("pop", "309 168");
-			sarthe.createRelationshipTo(mayenne, RelTypes.VOISIN);
 			
 			Node loireatlantique = graphdbservice.createNode();
 			loireatlantique.setProperty("name", "Loire-Atlantique");
 			loireatlantique.setProperty("code", "44");
 			loireatlantique.setProperty("pop", "1 322 404");
+			
+			// Creating relationships
+			paysdelaloire.createRelationshipTo(maineetloire, RelTypes.DEPARTEMENT);
+			maineetloire.createRelationshipTo(vendee, RelTypes.VOISIN);
+			vendee.createRelationshipTo(sarthe, RelTypes.VOISIN);
+			sarthe.createRelationshipTo(mayenne, RelTypes.VOISIN);
 			mayenne.createRelationshipTo(loireatlantique, RelTypes.VOISIN);
 		
 		//////////////////////////////////////////////////////////////////////////////////////////
 			
-			Node aquitaine = graphdbservice.createNode(); // cr??ation d'une autre r??gion
+			Node aquitaine = graphdbservice.createNode();
 			aquitaine.setProperty("name", "Aquitaine");
 			aquitaine.setProperty("code", "72");
+			
 			Node gironde = graphdbservice.createNode();
 			gironde.setProperty("name", "Gironde"); 
 			gironde.setProperty("code", "33"); 
@@ -208,7 +226,7 @@ public class Neo4JReader {
 					System.getProperty("line.separator");
 			//System.out.println(output);
 			Resource reg = m.createResource(stat+voisinPath.endNode().getProperty("name"));
-			reg.addProperty(DC.title, voisinPath.endNode().getProperty("name").toString());
+			reg.addProperty(DC_11.title, voisinPath.endNode().getProperty("name").toString());
 			m.add(Pays, caracterisepar, reg);
 			 
 			long id=0;

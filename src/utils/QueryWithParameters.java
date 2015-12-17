@@ -14,11 +14,10 @@ import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 import fr.um2.gmin332project.controller.Config;
-import fr.um2.gmin332project.d2rq.Commune;
 import fr.um2.gmin332project.d2rq.D2RQAdapter;
-import fr.um2.gmin332project.mongo.ISF;
-import fr.um2.gmin332project.mongo.MongoAdapter;
-import fr.um2.gmin332project.tdb.TDBReader;
+import fr.um2.gmin332project.model.Commune;
+import fr.um2.gmin332project.model.ISF;
+import fr.um2.gmin332project.tests.MongoTest;
 
 /*
  * 1ère approche :
@@ -138,7 +137,7 @@ public class QueryWithParameters {
 		System.out.println("==={ 1. Mongo }===========================");
 		
 		// 1. Mongo --> liste ordonnée ISF dans le département choisi
-		MongoAdapter mm = new MongoAdapter();
+		MongoTest mm = new MongoTest();
 		Set<String> codesInsee = new HashSet<String>();
 		try {
 			List<ISF> impots = new ArrayList<ISF>();
@@ -147,7 +146,7 @@ public class QueryWithParameters {
 					deptCode * 1000 + 1000, 
 					0,							// année = 0 --> renvoie tout
 					"patrimoine_moyen", 		// tri
-					MongoAdapter.ORDER_DESC);
+					MongoTest.ORDER_DESC);
 			
 			// Liste pour requ??te SPARQL
 			for (ISF i: impots) {

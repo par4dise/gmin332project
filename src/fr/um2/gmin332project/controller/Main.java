@@ -19,6 +19,9 @@ import fr.um2.gmin332project.mongo.MongoReader;
 import fr.um2.gmin332project.neo4j.Neo4JReader;
 import fr.um2.gmin332project.tdb.TDBReader;
 
+/**
+ * @author par4dise
+ */
 public class Main {
     public static final String NL = System.getProperty("line.separator");
 

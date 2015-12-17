@@ -18,6 +18,7 @@ import com.hp.hpl.jena.vocabulary.RDF;
 
 import de.fuberlin.wiwiss.d2rq.jena.ModelD2RQ;
 import fr.um2.gmin332project.controller.Config;
+import fr.um2.gmin332project.model.Commune;
 
 /*
  * Classe permettant d'interagir avec D2RQ en Java (POJO Commune en particulier)

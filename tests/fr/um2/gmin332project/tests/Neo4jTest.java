@@ -1,4 +1,4 @@
-package fr.um2.gmin332project.neo4j;
+package fr.um2.gmin332project.tests;
 
 import org.neo4j.graphdb.GraphDatabaseService;
 
@@ -13,8 +13,9 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.vocabulary.RDF;
 
 import fr.um2.gmin332project.controller.Config;
+import fr.um2.gmin332project.neo4j.Neo4JReader;
 
-public class Neo4JTest {
+public class Neo4jTest {
 	public static final String NL = System.getProperty("line.separator") ;
 	public static GraphDatabaseService graphdbservice;
 
